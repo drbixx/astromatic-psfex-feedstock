@@ -18,6 +18,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - autoconf
     - automake
     - libtool
@@ -35,7 +36,7 @@ test:
 
 about:
   home: http://www.astromatic.net/software/psfex
-  license: GPL-3.0
+  license: GPL-3.0-only
   license_file: LICENSE
   summary: a utility that makes PSF models for use with the SExtractor program.
   description: |
